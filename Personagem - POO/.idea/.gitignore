@@ -1,0 +1,15 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Arquivos de compilação do Java
+out/
+*.class
+
+# Arquivos de configuração do IntelliJ IDEA
+.idea/
+*.iml
+
+# Logs e arquivos temporários da máquina
+*.log
+.DS_Store
