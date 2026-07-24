@@ -4,15 +4,23 @@ public class Main {
         Guerreiro p1= new Guerreiro("Arthus",
                 20,
                 5,
-                80,
+                3200,
                 25);
 
         //Criação dO personagem Davi instaciando o objeto e exibição de seus status.
         Mago p2 = new Mago("Elenara",
                 20,
                 5,
-                80,
-                25);
+                60,
+                35);
+
+
+        Grupo grupo  = new Grupo();
+
+        grupo.adicionarPersonagem(p1);
+        grupo.adicionarPersonagem(p2);
+
+
 
         //Criação do array dos objetos criados
         Personagem[] personagens = {p1, p2};
@@ -20,6 +28,8 @@ public class Main {
         for(Personagem p : personagens) {
             System.out.println(p.usarHabilidadeEspecial());
         }
+
+        grupo.batalhar(p1, p2);
 
     }
 }

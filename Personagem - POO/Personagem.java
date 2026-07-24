@@ -4,6 +4,7 @@ public abstract class Personagem {
     int nivel;
     int pontosDeVida;
     double poderBase;
+    double poderTotal;
 
     //Método para exibir o status
     void exibirStatus() {
@@ -26,8 +27,11 @@ public abstract class Personagem {
         this.nivel = nivel;
         this.pontosDeVida = pontosDeVida;
         this.poderBase = poderBase;
+        this.poderTotal = this.nivel * this.poderBase;
 
     }
 
     public abstract String usarHabilidadeEspecial();
+
+
 }
