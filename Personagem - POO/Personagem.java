@@ -1,4 +1,4 @@
-public class Personagem {
+public abstract class Personagem {
     String nome;
     String classe;
     int nivel;
@@ -28,4 +28,6 @@ public class Personagem {
         this.poderBase = poderBase;
 
     }
+
+    public abstract String usarHabilidadeEspecial();
 }
